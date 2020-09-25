@@ -1,0 +1,31 @@
+PROCEDURE sort(VAR arr: ARRAY_OF INTEGER, n: INTEGER)
+VAR
+    i,n: INTEGER;
+BEGIN
+    n:= arr.length;
+    FOR i FROM 0 TO n-2 STEP 1  DO
+        IF (arr[i]>arr[i+1]) THEN
+            swap(arr[i], arr[i+1]);
+        END_IF
+        i:= i +1;
+    END_FOR
+END
+
+
+ALGORITHM Searchng
+VAR
+    set := ARRAY_OF INTEGER[50];
+    a: INTEGER;
+BEGIN
+    REPEAT
+        write("enter the array size: ");
+        read(a);
+    UNTIL (a>0 AND a<50)
+
+FOR i FROM 0 TO a-1   DO
+    read(set[i]);
+END_FOR
+sort(arr, n);
+  Write(arr[i]);
+
+END
